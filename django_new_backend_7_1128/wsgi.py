@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_new_backend_7_1128.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_new_backend_7_1128.settings")
 
 application = get_wsgi_application()
