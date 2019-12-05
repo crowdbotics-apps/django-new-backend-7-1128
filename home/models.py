@@ -10,6 +10,10 @@ class CustomText(models.Model):
     r2 = models.ManyToManyField(
         "home.HomePage", blank=True, related_name="customtext_r2",
     )
+    r21 = models.ManyToManyField(
+        "users.User", blank=True, related_name="customtext_r21",
+    )
+    r3 = models.TimeField(auto_now=False, auto_now_add=False, null=True, blank=True,)
 
     def __str__(self):
         return self.title
